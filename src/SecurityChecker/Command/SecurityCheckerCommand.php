@@ -24,7 +24,7 @@ class SecurityCheckerCommand extends Command
 
     protected const COMMAND_NAME = 'security:check';
 
-    protected const BINARY_CHECKER = '$(curl -s https://api.github.com/repos/fabpot/local-php-security-checker/releases/latest | grep browser_download_url | cut -d\" -f4 | egrep "local-php-security-checker_[0-9.]+_linux_amd64$")';
+    protected const BINARY_CHECKER = '$(curl -s https://api.github.com/repos/fabpot/local-php-security-checker/releases/latest | grep browser_download_url | cut -d\" -f4 | egrep "local-php-security-checker_linux_amd64$")';
     protected const FILE_NAME = '/tmp/security-checker';
     protected const FALSE_POSITIVE_ISSUE_NUMBER = 'CVE-NONE-0001';
 
